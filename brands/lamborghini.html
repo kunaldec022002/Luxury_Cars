@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAMBORGHINI PAGE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+<style>
+   body
+  {
+    background-size:cover;
+  }
+   .nav-content{
+    color: white;
+    font-size: 40px;
+    font: bold;
+  
+  }
+  .cards
+  {
+    padding: 10px;
+  }
+  .All-btns
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.card-contain
+{
+  text-align: center;
+  font-size: 20px;
+}
+.quantities
+{
+  font-size: 20px;
+  margin: 5px;
+  padding:2px
+}
+#number{
+  text-align: center;
+}
+.card-img{
+  padding: 5px;
+}
+.card-img:hover{
+  transform: scaleX(-1);
+}
+.bmwcards{
+  background: none;
+  box-shadow: 0px 0px 10px black;
+  overflow: hidden;
+}
+.bmwcards:hover{
+  box-shadow: 0px 0px 15px #32329f;
+  transition: 0.5s;
+}
+.bmwbutton{
+    background-color:black;
+    color:white; 
+    display: block;
+    margin: auto;
+  }
+.bmwbutton:hover{
+  background-color: rgb(34, 39, 41);
+   border: 2px solid white; 
+  box-shadow: 0px 0px 5px  white;
+  color: white;
+
+}
+
+.home-btn
+  {
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+   
+  }
+  .home-btn1
+  {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 2px;
+  }
+
+
+.size
+{
+  height: 400px;
+  width: 168;
+}
+.bmwbutton{
+    background-color:black;
+    color:white; 
+    display: block;
+    margin: auto;
+  }
+.bmwbutton:hover{
+  background-color: rgb(34, 39, 41);
+   border: 2px solid white; 
+  box-shadow: 0px 0px 5px  white;
+  color: white;
+
+}
+.btn-link
+  {
+    text-decoration: none;
+    color: white;
+  }
+  .btn-link:hover
+  {
+    color: white;
+  }
+
+</style>
+<body background="../Images/BMW/wallpaper.webp">
+ 
+  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"> 
+        <marquee class="nav-content"> WEL - COME TO THE LAMBORGHINI CAR COLLECTION  !!!!</marquee>
+   </nav>
+   <div class="row row-cols-1 row-cols-md-3 g-4 cards">
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Image/Lamborghini/Avendator.jpg"class="size"class="card-img-top card-img"id="BMW" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>Lamborghini Avendator CAR</u></h5>
+          <p class="card-text card-contain">The LAMBORGHINI Avendator is a most luxurious Car in the world.</p>
+          <p class="card-contain"><b>Price </b>: 2,00,00,000 /-</p>
+  
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside()">Side View</button>
+    
+          </div>
+            <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+    
+        </div>
+      </div>
+    </div>
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Image/Lamborghini/Urus-front.jpg" class="size" class="card-img-top card-img"id="BMW1" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>Lamborghini Urus CAR</u></h5>
+          <p class="card-text card-contain">The LAMBORGHINI Urus is a most luxurious Car in the world.</p>
+          <p class="card-contain"><b>Price </b>: 2,00,00,000 /-</p>
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview1()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview1()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside1()">Side View</button>
+    
+          </div>
+            <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+    
+        </div>
+      </div>
+    </div>
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Image/Lamborghini/diablo-front.jpg" class="size" class="card-img-top card-img"id="BMW2" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>LAMBORGHINI DIABLO CAR</u></h5>
+          <p class="card-text card-contain">The LAMBORGHINI Diablo is a most luxurious Car in the world.</p>
+          <p class="card-contain"><b>Price </b>: 2,00,00,000 /-</p>
+          
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview2()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview2()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside2()">Side View</button>
+    
+          </div>
+            <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+    
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4 cards">
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Image/Lamborghini/gallardo-front.jpg" class="size" class="card-img-top card-img"id="BMW3" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>LAMBORGHINI GALLARDO CAR</u></h5>
+          <p class="card-text card-contain">The LAMBORGHINI Gallardo is a most luxurious Car in the world.</p>
+          <p class="card-contain"><b>Price </b>: 2,00,00,000 /-</p>
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview3()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview3()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside3()">Side View</button>
+    
+          </div>
+            <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+    
+        </div>
+      </div>
+    </div>
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Image/lamborghini/Huracan -front.jpg"class="size" class="card-img-top card-img"id="BMW4" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>LAMBORGHINI HURACAN CAR</u></h5>
+          <p class="card-text card-contain">The LAMBORGHINI Huracan is a most luxurious Car in the world.</p>
+          <p class="card-contain"><b>Price </b>: 2,00,00,000 /-</p>
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview4()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview4()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside4()">Side View</button>
+    
+          </div>
+            <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+    
+        </div>
+      </div>
+    </div>
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Image/lamborghini/Murcielago-front.jpg" class="size" class="card-img-top card-img"id="BMW5" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>LAMBORGHINI MURCIELANGO CAR</u></h5>
+          <p class="card-text card-contain">The LAMBORGHINI Murcielago is a most luxurious Car in the world.</p>
+          <p class="card-contain"><b>Price </b>: 2,00,00,000 /-</p>
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview5()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview5()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside5()">Side View</button>
+    
+          </div>
+            <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+    
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <script>
+    function backview()
+    {
+      const backview = document.getElementById('BMW');
+      backview.src="../Image/lamborghini/Avendator-back.jpg";
+    }
+
+    function Frontview()
+    {
+      const Frontview = document.getElementById('BMW');
+      Frontview.src="../Image/lamborghini/Avendator.jpg";
+    }
+
+    function inside()
+    {
+      const inside = document.getElementById('BMW');
+      inside.src="../Image/lamborghini/Avendator-side.jpg";
+    }
+
+    function backview1()
+    {
+      const backview = document.getElementById('BMW1');
+      backview.src="../Image/lamborghini/urus-back.jpg";
+    }
+
+    function Frontview1()
+    {
+      const Frontview = document.getElementById('BMW1');
+      Frontview.src="../Image/lamborghini/Urus-front.jpg";
+    }
+
+    function inside1()
+    {
+      const inside = document.getElementById('BMW1');
+      inside.src="../Image/lamborghini/Urus-side.jpg";
+    }
+
+    function backview2()
+    {
+      const backview = document.getElementById('BMW2');
+      backview.src="../Image/lamborghini/diablo-back.jpg ";
+    }
+
+    function Frontview2()
+    {
+      const Frontview = document.getElementById('BMW2');
+      Frontview.src="../Image/lamborghini/diablo-front.jpg";
+    }
+
+    function inside2()
+    {
+      const inside = document.getElementById('BMW2');
+      inside.src="../Image/lamborghini/diablo-side.jpg";
+    }
+
+
+    function backview3()
+    {
+      const backview = document.getElementById('BMW3');
+      backview.src="../Image/lamborghini/gallardo-back.jpg ";
+    }
+
+    function Frontview3()
+    {
+      const Frontview = document.getElementById('BMW3');
+      Frontview.src="../Image/lamborghini/gallardo-front.jpg";
+    }
+
+    function inside3()
+    {
+      const inside = document.getElementById('BMW3');
+      inside.src="../Image/lamborghini/gallardo-side.jpg";
+    }
+
+    function backview4()
+    {
+      const backview = document.getElementById('BMW4');
+      backview.src="../Image/lamborghini/Hurancan-back.jpg";
+    }
+
+    function Frontview4()
+    {
+      const Frontview = document.getElementById('BMW4');
+      Frontview.src="../Image/lamborghini/Huracan -front.jpg";
+    }
+
+    function inside4()
+    {
+      const inside = document.getElementById('BMW4');
+      inside.src="../Image/lamborghini/Huracan -side.jpg";
+    }
+
+
+    function backview5()
+    {
+      const backview = document.getElementById('BMW5');
+      backview.src="../Image/lamborghini/Murcielago-back.jpg ";
+    }
+
+    function Frontview5()
+    {
+      const Frontview = document.getElementById('BMW5');
+      Frontview.src="../Image/lamborghini/Murcielago-front.jpg";
+    }
+
+    function inside5()
+    {
+      const inside = document.getElementById('BMW5');
+      inside.src="../Image/lamborghini/Murcielago-side.jpg";
+    }
+
+
+
+
+    function increaseValue() {
+      var value = parseInt(document.getElementById('number').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      document.getElementById('number').value = value;
+
+    }
+
+function decreaseValue() {
+      var value = parseInt(document.getElementById('number').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value < 1 ? value = 1 : '';
+      value--;
+      document.getElementById('number').value = value;
+     }
+ function ammount(){
+  var Quantity=document.getElementById('number').value = value;
+  var value=2*20000000;
+  document.getElementById('total').value = value;
+}
+
+  </script>
+  <button type="button" class="btn btn-dark home-btn"><a href="../index.html"class=" home-btn1"> Back To Home</a></button>
+
+</body>
+</html>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            
+        </title>
+      <link rel="stylesheet" href="index.css"> 
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+      rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+       crossorigin="anonymous">
+       
+    
+
+       <style>
+         body
+  {
+    background-size:cover;
+  }
+   .nav-content{
+    color: white;
+    font-size: 40px;
+    font: bold;
+  
+  }
+  .cards
+  {
+    padding: 10px;
+  }
+  .All-btns
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.card-contain
+{
+  text-align: center;
+  font-size: 20px;
+}
+.quantities
+{
+  font-size: 20px;
+  margin: 5px;
+  padding:2px
+}
+#number{
+  text-align: center;
+}
+.card-img{
+  padding: 5px;
+}
+.card-img:hover{
+  transform: scaleX(-1);
+}
+.bmwcards{
+  background: none;
+  box-shadow: 0px 0px 10px black;
+}
+.bmwcards:hover{
+  box-shadow: 0px 0px 15px #32329f;
+  transition: 0.5s;
+}
+.bmwbutton{
+    background-color:black;
+    color:white; 
+    display: block;
+    margin: auto;
+  }
+.bmwbutton:hover{
+  background-color: rgb(34, 39, 41);
+   border: 2px solid white; 
+  box-shadow: 0px 0px 5px  white;
+  color: white;
+
+}
+.btn-link
+  {
+    text-decoration: none;
+    color: white;
+  }
+  .btn-link:hover
+  {
+    color: white;
+  }
+.navbar-content
+{
+  font-size: 20px;
+  
+}
+       </style>
+
+    
+
+    </head>
+    <body  class="body-bg-color"background="./Images/BMW/wallpaper.webp">
+
+     
+      <section id="nav-bar">
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./Image/icons/menu.png" class="menu-img"/>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <span style="color: white; font-size: 25px;font-family:sans-serif;">Car Collection</span>
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./categories.html">Categories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./service.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+    </section>
+
+ 
+
+       <!--banner Section-->
+
+       <section id="banner">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                  
+                    <P id="baner-title">	
+                      Curated Car Collections Browse Now!
+                    </P>
+                    <p class="banner-content">
+
+                      Welcome to our remarkable car collection, where automotive passion meets history and engineering
+                       excellence. Our carefully curated assortment of automobiles spans decades, showcasing the evolution
+                        of automotive design, technology, and craftsmanship. Whether you're a seasoned car enthusiast or 
+                        simply appreciate the beauty of these iconic machines,
+                       our collection offers a journey through time on four wheels.
+
+                      Car-Collection is your online destination for exploring a curated selection of exquisite automobiles from classic to contemporary,
+                      <br/> offering enthusiasts a virtual showroom of automotive excellence.
+                  
+                    </p>
+                 
+                </div>
+
+                <div class="col-md-6 text-center">
+
+                    <img src="./Image/home img collection.jpeg" class="img-fluid" id="collection-img"/>
+                </div>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <section id="services">
+
+      <div class="container text-center">
+        <div class="p-3 mb-2 bg-secondary text-white fs-2 " id="heading-car_collection">The most searched cars</div>
+
+        <!------Rolls Royce-->
+
+      
+
+    
+    </section>
+
+     
+    <body background="./Images/BMW/wallpaper.webp">
+ 
+      <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"> 
+            
+       </nav>
+       <div class="row row-cols-1 row-cols-md-3 g-4 cards">
+        <div class="col   ">
+          <div class="card bmwcards">
+            <div class="p-3 mb-2 bg-primary text-white" id="title-rolls-royce">Rolls Royce</div>
+            <img src="./Image/rolls royce full-view.jpg" class="card-img-top card-img"id="rolls-royce" alt="Download error">
+            <div class="card-body">
+      
+              <div class="All-btns">
+                <button type="button" class="btn btn-success view-btn" onclick="Frontview()">Front View</button>
+                <button type="button" class="btn btn-danger view-btn" onclick="backview()">Back View</button>
+                <button type="button" class="btn btn-warning view-btn" onclick="inside()">Interior view</button>
+              </div>
+             
+        
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bmwcards">
+            <div class="p-3 mb-2 bg-primary text-white" id="title-rolls-royce">BMW</div>
+            <img src="./Image/BMW/bmw full img.jpg" class="card-img-top card-img"id="BMW" alt="Download error">
+            <div class="card-body">
+        
+              <div class="All-btns">
+    
+                <button type="button" class="btn btn-success view-btn" onclick="front_bmw()">Front View</button>
+                <button type="button" class="btn btn-danger view-btn" onclick=" back_bmw()">Back View</button>
+                <button type="button" class="btn btn-warning view-btn" onclick="inside_bmw ()">Interior view</button>
+              </div>
+            
+        
+            </div>
+          </div>
+        </div>
+        <div class="col   ">
+          <div class="card bmwcards">
+            <div class="p-3 mb-2 bg-primary text-white" id="title-rolls-royce">BUGATI</div>
+            <img src="./Image/BUGATI/bugati-full.jpg" class="card-img-top card-img"id="Bugati" alt="Download error">
+             <div class="card-body">
+        
+              <div class="All-btns">
+    
+                <button type="button" class="btn btn-success view-btn" onclick="front_bugati()">Front View</button>
+                <button type="button" class="btn btn-danger view-btn" onclick=" back_bugati()">Back View</button>
+                <button type="button" class="btn btn-warning view-btn" onclick="inside_bugati ()">Interior view</button>
+              </div>
+            
+        
+            </div>
+          </div>
+        </div>
+  
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 cards">
+        <div class="col   ">
+          <div class="card bmwcards">
+            <div class="p-3 mb-2 bg-primary text-white" id="title-rolls-royce">TATA</div>
+            <img src="./Image/TATA/tata-full.png" class="card-img-top card-img"id="tata" alt="Download error">
+            <div class="card-body">
+      
+              <div class="All-btns">
+    
+                <button type="button" class="btn btn-success view-btn" onclick="front_tata()">Front View</button>
+                <button type="button" class="btn btn-danger view-btn" onclick=" back_tata()">Back View</button>
+                <button type="button" class="btn btn-warning view-btn" onclick="inside_tata()">Interior view</button>
+              </div>
+             
+        
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card bmwcards">
+            <div class="p-3 mb-2 bg-primary text-white" id="title-rolls-royce">Lamborghini</div>
+            <img src="./Image/lamborghini/lamborghini-full.jpg" class="card-img-top card-img"id="lamborghini" alt="Download error">
+            <div class="card-body">
+        
+              <div class="All-btns">
+    
+                <button type="button" class="btn btn-success view-btn" onclick="front_lamborghini()">Front View</button>
+                <button type="button" class="btn btn-danger view-btn" onclick=" back_lamborghini()">Back View</button>
+                <button type="button" class="btn btn-warning view-btn" onclick="inside_lamborghini()">Interior view</button>
+              </div>
+            
+        
+            </div>
+          </div>
+        </div>
+        <div class="col   ">
+          <div class="card bmwcards">
+            <div class="p-3 mb-2 bg-primary text-white" id="title-rolls-royce">TOYOTA</div>
+            <img src="./Image/toyota/toyota- full.jpg" class="card-img-top card-img"id="toyota" alt="Download error">
+          
+             
+              <div class="All-btns">
+    
+                <button type="button" class="btn btn-success view-btn" onclick="front_toyota()">Front View</button>
+                <button type="button" class="btn btn-danger view-btn" onclick=" back_toyota()">Back View</button>
+                <button type="button" class="btn btn-warning view-btn" onclick="inside_toyota()">Interior view</button>
+              </div>
+            
+        
+            </div>
+          </div>
+        </div>
+       
+      </div>
+
+            <!---Highlight section-->
+           
+             <br/><br/>
+            <div style="font-size: xx-large;font-family: fantasy; text-align: center;">
+             Highlights:-
+            </div>
+            <br/>
+
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <div class="card border border-primary" style="width: 18rem;">
+                    <img src="./Image/BUGATI/bugati-full.jpg" class="card-img-top p-1" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Bugati</h5>
+                      <p class="card-text">
+                        Bugatti is a French luxury car brand that was founded in 1909 by Ettore Bugatti. The brand has a long history 
+                        of making some of the most exclusive and powerful sports cars in the world.
+                      </p>
+                      <a href="./brands/bugatti.html" class="btn btn-primary">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col">
+                  <div class="card border border-primary" style="width: 18rem;">
+                    <img src="./Image/rolls royce full-view.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Roll-Royce</h5>
+                      <p class="card-text">
+                        Rolls Royce is a British luxury car brand that was founded in 1904 by Charles Rolls and Henry Royce. The company is known worldwide for
+                         manufacturing some of the most luxurious, high-quality, and exclusive cars.
+                      </p>
+                      <a href="./brands/rolls-royce.html" class="btn btn-primary">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border border-primary" style="width: 18rem;">
+                    <img src="./Image/BMW/bmw full img.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">BMW</h5>
+                      <p class="card-text">
+                        BMW is a German luxury car manufacturer that was founded in 1916 as a manufacturer of aircraft engines. Today, the company produces a wide range of cars, motorcycles, and engines,
+                         and is known for its premium quality, luxury, and high-performance vehicles.
+                      </p>
+                      <a href="./brands/BMW.html" class="btn btn-primary">More Info</a>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <br/><br/>
+
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <div class="card border border-primary" style="width: 18rem;">
+                    <img src="./Image/TATA/tata-full.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">TATA</h5>
+                      <p class="card-text">
+                        Tata Motors is an Indian automaker that produces cars, trucks, buses, and
+                         commercial vehicles. The company was founded in 1945 and has grown to
+                         become one of the largest car manufacturers in India and across the world.
+                      </p>
+                      <a href="./brands/TATA.html" class="btn btn-primary">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border border-primary" style="width: 18rem;">
+                    <img src="./Image/lamborghini/lamborghini-full.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Lamborghini</h5>
+                      <p class="card-text"> 
+                        Lamborghini is a brand of luxury sports cars that originated in Italy. The company was founded in 1963 by Ferruccio Lamborghini, a wealthy
+                         businessman who was dissatisfied with the quality of available sports cars. 
+                      </p>
+                      <a href="./brands/lamborghini.html" class="btn btn-primary">More Info</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card border border-primary" style="width: 18rem;">
+                    <img src="./Image/toyota/toyota- full.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Toyota</h5>
+                      <p class="card-text">
+                        Toyota is a Japanese automaker that produces a wide range of vehicles,
+                         from small economy cars to large trucks and SUVs. The company was founded in 1937 and has grown
+                         to become one of the largest and most popular car brands in the world.
+                      </p>
+                      <a href="./brands/toyota.html" class="btn btn-primary">More Info</a>
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <br/><br/>
+
+            <!--Client Feedback-->
+
+
+
+
+             
+           
+
+
+      
+      
+       
+        
+
+      
+
+           <!--------Social media section------->
+
+         <section id="social-media">
+
+          <div class="container text-center">
+            <p>FIND US ON SOCIAL MEDIA</p>
+            <div class="social-icons">
+
+
+              <a href="#"><img src="./Image/icons/facebook (1).png"></a>
+              <a href="https://github.com/anuprita8540/car_collection"><img src="./Image/icons/github-sign.png"></a>
+              <a href="#"><img src="./Image/icons/instagram (3).png"></a>
+              <a href="#"><img src="./Image/icons/snapchat.png"></a>
+              <a href="#"><img src="./Image/icons/twitter (2).png"></a>
+
+              
+
+            </div>
+          </div>
+         </section>
+        
+          <!---footer section-->
+
+          <section id="footer">
+
+            <div class="container">
+  
+              <div class="row">
+  
+                <div class="col-md-4 footer-box">
+                  <p><b>Quick Links</b></p>
+                  <P>
+                    <a href="./index.html" class="footer-quick-link">Home</a>
+                </P>
+               
+                <P>
+                  <a href="./categories.html"  class="footer-quick-link">Brands</a>
+                </P>
+
+                <P>
+                  <a href="./contact.html"  class="footer-quick-link">Contact</a>
+                </P>
+
+                <P>
+                  <a href="./service.html"  class="footer-quick-link">Services</a>
+                </P>
+
+                
+                </div>
+  
+                <div class="col-md-4 footer-box">
+                  <p><b>CONTACT US</b></p>
+                  <p>
+                    <img src="./Image/icons/google-maps.png" class="direction"/>
+                     Trade Centre,Banglore</p>
+                  <p>
+                    <img src="./Image/icons/telephone-call.png"  class="direction"/>
+                     +9110020210210</p>
+                  <p>
+                    <img src="./Image/icons/gmail (1).png"  class="direction"/> Car_Collection500@gmail.com</p>
+                </div>
+  
+                <div class="col-md-4 footer-box">
+  
+                  <p><b>FAQs</b></p>
+                  <input type="email" class="form-control" placeholder="Any question"  />
+                  <button type="button" class="btn btn-primary" onclick="submit()">Submit</button>
+                </div>
+              </div>
+              <hr>
+              <p class="copyright">@2023Website Crafted By Car_Collection Team</p>
+            </div>
+           </section>
+
+
+
+        <script>
+
+          /* rolls royce */
+
+          function backview()
+          {
+            const backview = document.getElementById('rolls-royce');
+            backview.src="./Image/Rolls-Royce-back-vieew.jpg";
+          }
+
+          function Frontview()
+          {
+            const Frontview = document.getElementById('rolls-royce');
+            Frontview.src="./Image/Roll-Royce/dawn-front.jpg";
+          }
+
+          function inside()
+          {
+            const inside = document.getElementById('rolls-royce');
+            inside.src="./Image/rolls royce seats view.jpeg";
+          }
+
+          /* BMW */
+
+          function front_bmw()
+          {
+          const BMW_front = document.getElementById('BMW');
+          BMW_front.src= "./Image/BMW/BMW-front.jpg";
+          }
+
+          function back_bmw()
+          {
+          const BMW_back = document.getElementById('BMW');
+          BMW_back.src= "./Image/BMW/bmw-back.jpg";
+          }
+
+          function inside_bmw()
+          {
+          const BMW_inside = document.getElementById('BMW');
+          BMW_inside.src= "./Image/BMW/bmw-inside.jpg";
+          }
+
+          /*--Bugati--*/
+
+          function front_bugati()
+          {
+          const BMW_front = document.getElementById('Bugati');
+          BMW_front.src= "./Image/BUGATI/bugati-front.jpg";
+          }
+
+          function back_bugati()
+          {
+          const BMW_back = document.getElementById('Bugati');
+          BMW_back.src= "./Image/BUGATI/bugati-back.jpg";
+          }
+
+          function inside_bugati()
+          {
+          const BMW_inside = document.getElementById('Bugati');
+          BMW_inside.src= "./Image/BUGATI/bugati-inside.jpg";
+          }
+
+           /*--lamborghini--*/
+
+           function front_lamborghini()
+          {
+          const BMW_front = document.getElementById('lamborghini');
+          BMW_front.src= "./Image/lamborghini/lamborghini-front.jpg";
+          }
+
+          function back_lamborghini()
+          {
+          const BMW_back = document.getElementById('lamborghini');
+          BMW_back.src= "./Image/lamborghini/lamborghini-back.jpg";
+          }
+
+          function inside_lamborghini()
+          {
+          const BMW_inside = document.getElementById('lamborghini');
+          BMW_inside.src= "./Image/lamborghini/lamborghini-inside.jpg";
+          }
+
+           /*--toyota--*/
+
+           function front_toyota()
+          {
+          const BMW_front = document.getElementById('toyota');
+          BMW_front.src= "./Image/toyota/toyota-front.jpeg";
+          }
+
+          function back_toyota()
+          {
+          const BMW_back = document.getElementById('toyota');
+          BMW_back.src= "./Image/toyota/toyota-back.jpg";
+          }
+
+          function inside_toyota()
+          {
+          const BMW_inside = document.getElementById('toyota');
+          BMW_inside.src= "./Image/toyota/toyota-inside.jpg";
+          }
+
+           /*--TATA--*/
+
+           function front_tata()
+          {
+          const BMW_front = document.getElementById('tata');
+          BMW_front.src= "./Image/tata/tata-front.png";
+          }
+
+          function back_tata()
+          {
+          const BMW_back = document.getElementById('tata');
+          BMW_back.src= "./Image/tata/tata-back.jpg";
+          }
+
+          function inside_tata()
+          {
+          const BMW_inside = document.getElementById('tata');
+          BMW_inside.src= "./Image/tata/tata-interior.jpg";
+          }
+
+          /*---submit section----*/
+          
+          function submit ()
+          {
+            
+            const result=alert(' Submit Sucessfully!')
+          }
+         
+        </script>
+
+    </body>
+</html>

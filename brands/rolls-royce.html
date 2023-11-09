@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rolls-Royce PAGE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+<style>
+   body
+  {
+    background-size:cover;
+  }
+   .nav-content{
+    color: white;
+    font-size: 40px;
+    font: bold;
+  
+  }
+  .cards
+  {
+    padding: 10px;
+  }
+  .All-btns
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.card-contain
+{
+  text-align: center;
+  font-size: 20px;
+}
+.quantities
+{
+  font-size: 20px;
+  margin: 5px;
+  padding:2px
+}
+#number{
+  text-align: center;
+}
+.card-img{
+  padding: 5px;
+}
+.card-img:hover{
+  transform: scaleX(-1);
+}
+.bmwcards{
+  background: none;
+  box-shadow: 0px 0px 10px black;
+}
+.bmwcards:hover{
+  box-shadow: 0px 0px 15px #32329f;
+  transition: 0.5s;
+}
+.bmwbutton{
+    background-color:black;
+    color:white; 
+    display: block;
+    margin: auto;
+  }
+.bmwbutton:hover{
+  background-color: rgb(34, 39, 41);
+   border: 2px solid white; 
+  box-shadow: 0px 0px 5px  white;
+  color: white;
+
+}
+.btn-link
+  {
+    text-decoration: none;
+    color: white;
+  }
+  .btn-link:hover
+  {
+    color: white;
+  }
+
+  #footer-home-btn
+  {
+    color: black;
+    text-decoration: none;
+   display: block;
+   margin: 0px auto;
+  
+  }
+
+ 
+
+
+
+  .home-btn
+  {
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+   
+  }
+  .home-btn1
+  {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 2px;
+  }
+
+</style>
+<body background="../Images/BMW/wallpaper.webp">
+ 
+  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"> 
+        <marquee class="nav-content"> WEL - COME TO THE Rolls Royce CAR COLLECTION  !!!!</marquee>
+   </nav>
+   <div class="row row-cols-1 row-cols-md-3 g-4 cards">
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="./../Image/Roll-Royce/rolls royce-full.jpg" class="card-img-top card-img"id="rolls royce" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>Rolls-Royce Phantom</u></h5>
+          <p class="card-contain"><b>Price </b>: 5,00,00,000 Cr /-</p>
+         
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside()">Side View</button>
+    
+          </div>
+          <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card bmwcards">
+        <img src="../Image/Roll-Royce/cullinum.jpg" class="card-img-top card-img"id="rolls royce1" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>Rolls-Royce Cullinan</u></h5>
+          <p class="card-contain"><b>Price </b>: 10,00,00,000 Cr /-</p>
+          
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview1()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview1()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside1()">Side View</button>
+    
+          </div>
+          <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Image/Roll-Royce/ghost.jpg" class="card-img-top card-img"id="rolls royce2" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>Rolls-Royce Ghost</u></h5>
+          <p class="card-contain"><b>Price </b>: 7,00,00,000 Cr /-</p>
+          
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview2()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview2()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside2()">Side View</button>
+    
+          </div>
+          <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4 cards">
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Image/Roll-Royce/dawn.jpg" class="card-img-top card-img"id="rolls royce3" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u> Rolls-Royce Dawn</u></h5>
+          <p class="card-contain"><b>Price </b>: 2,00,00,000 /-</p>
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview3()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview3()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside3()">Side View</button>
+    
+          </div>
+          <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Image/Roll-Royce/silver ghost.jpg" class="card-img-top card-img"id="rolls royce4" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>Rolls-Royce Silver Ghost</u></h5>
+          
+          <p class="card-contain"><b>Price </b>: 13,00,00,000 Cr /-</p>
+         
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview4()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview4()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside4()">Side View</button>
+    
+          </div>
+          <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Image/Roll-Royce/Wraith.jpg" class="card-img-top card-img"id="rolls royce5" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>Rolls-Royce Wraith</u></h5>
+         
+          <p class="card-contain"><b>Price </b>: 14,00,00,000 Cr  /-</p>
+         
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview5()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview5()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside5()">Side View</button>
+    
+          </div>
+          <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+          
+    
+        </div>
+       
+      </div>
+     
+    </div>
+  
+   
+  </div>
+
+  <br/>
+  
+
+  <br/><br/>
+
+ 
+
+
+  <script>
+    
+    function backview()
+    {
+      const backview = document.getElementById('rolls royce');
+      backview.src="../Image/Roll-Royce/back.jpeg";
+    }
+
+    function Frontview()
+    {
+      const Frontview = document.getElementById('rolls royce');
+      Frontview.src="../Image/Roll-Royce/front.jpg";
+    }
+
+    function inside()
+    {
+      const inside = document.getElementById('rolls royce');
+      inside.src="../Image/Roll-Royce/side.jpg";
+    }
+
+    function backview1()
+    {
+      const backview = document.getElementById('rolls royce1');
+      backview.src="../Image/Roll-Royce/cullinum-back.jpeg";
+    }
+
+    function Frontview1()
+    {
+      const Frontview = document.getElementById('rolls royce1');
+      Frontview.src="../Image/Roll-Royce/cullinum-front.jpg";
+    }
+
+    function inside1()
+    {
+      const inside = document.getElementById('rolls royce1');
+      inside.src="../Image/Roll-Royce/cullinum-side.jpg";
+    }
+
+    function backview2()
+    {
+      const backview = document.getElementById('rolls royce2');
+      backview.src="../Image/Roll-Royce/ghoost-back.jpg ";
+    }
+
+    function Frontview2()
+    {
+      const Frontview = document.getElementById('rolls royce2');
+      Frontview.src="../Image/Roll-Royce/ghoost-front.jpg";
+    }
+
+    function inside2()
+    {
+      const inside = document.getElementById('rolls royce2');
+      inside.src="../Image/Roll-Royce/ghoost-side.jpg";
+    }
+
+
+    function backview3()
+    {
+      const backview = document.getElementById('rolls royce3');
+      backview.src="../Image/Roll-Royce/dawn-back.jpg ";
+    }
+
+    function Frontview3()
+    {
+      const Frontview = document.getElementById('rolls royce3');
+      Frontview.src="../Image/Roll-Royce/dawn-front.jpg";
+    }
+
+    function inside3()
+    {
+      const inside = document.getElementById('rolls royce3');
+      inside.src="../Image/Roll-Royce/dawn-side.jpg";
+    }
+
+    function backview4()
+    {
+      const backview = document.getElementById('rolls royce4');
+      backview.src="../Image/Roll-Royce/silver ghost back.jpeg";
+    }
+
+    function Frontview4()
+    {
+      const Frontview = document.getElementById('rolls royce4');
+      Frontview.src="../Image/Roll-Royce/silver ghost front.jpg";
+    }
+
+    function inside4()
+    {
+      const inside = document.getElementById('rolls royce4');
+      inside.src="../Image/Roll-Royce/silver ghost side.jpg";
+    }
+
+
+    function backview5()
+    {
+      const backview = document.getElementById('rolls royce5');
+      backview.src="../Image/Roll-Royce/wraith back.jpg ";
+    }
+
+    function Frontview5()
+    {
+      const Frontview = document.getElementById('rolls royce5');
+      Frontview.src="../Image/Roll-Royce/wraith front.jpg";
+    }
+
+    function inside5()
+    {
+      const inside = document.getElementById('rolls royce5');
+      inside.src="../Image/Roll-Royce/wraith side.jpg";
+    }
+
+
+
+
+    function increaseValue() {
+      var value = parseInt(document.getElementById('number').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      document.getElementById('number').value = value;
+
+    }
+
+function decreaseValue() {
+      var value = parseInt(document.getElementById('number').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value < 1 ? value = 1 : '';
+      value--;
+      document.getElementById('number').value = value;
+     }
+ function ammount(){
+  var Quantity=document.getElementById('number').value = value;
+  var value=2*20000000;
+  document.getElementById('total').value = value;
+}
+
+  </script>
+  <button type="button" class="btn btn-dark home-btn"><a href="../index.html"class=" home-btn1"> Back To Home</a></button>
+
+</body>
+</html>

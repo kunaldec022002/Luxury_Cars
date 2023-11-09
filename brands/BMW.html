@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> BMW PAGE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+</head>
+<style>
+   body
+  {
+    background-size:cover;
+  }
+   .nav-content{
+    color: white;
+    font-size: 40px;
+    font: bold;
+  
+  }
+  .cards
+  {
+    padding: 10px;
+  }
+  .All-btns
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.card-contain
+{
+  text-align: center;
+  font-size: 20px;
+}
+.quantities
+{
+  font-size: 20px;
+  margin: 5px;
+  padding:2px
+}
+#number{
+  text-align: center;
+}
+.card-img{
+  padding: 5px;
+}
+.card-img:hover{
+  transform: scaleX(-1);
+}
+.bmwcards{
+  background: none;
+  box-shadow: 0px 0px 10px black;
+}
+.bmwcards:hover{
+  box-shadow: 0px 0px 15px #32329f;
+  transition: 0.5s;
+}
+.bmwbutton{
+    background-color:black;
+    color:white; 
+    display: block;
+    margin: auto;
+  }
+.bmwbutton:hover{
+  background-color: rgb(34, 39, 41);
+   border: 2px solid white; 
+  box-shadow: 0px 0px 5px  white;
+  color: white;
+
+}
+.btn-link
+  {
+    text-decoration: none;
+    color: white;
+  }
+  .btn-link:hover
+  {
+    color: white;
+  }
+  .home-btn
+  {
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+   
+  }
+  .home-btn1
+  {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 2px;
+  }
+</style>
+<body background="../Images/BMW/wallpaper.webp">
+ 
+  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"> 
+        <marquee class="nav-content"> WEL - COME TO THE BMW CAR COLLECTION  !!!!</marquee>
+   </nav>
+   <div class="row row-cols-1 row-cols-md-3 g-4 cards">
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Images/BMW/bmwx2.jpg" class="card-img-top card-img"id="BMW" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>BMW X2 CAR</u></h5>
+          <p class="card-text card-contain">The BMW X2 is a subcompact luxury crossover SUV produced by BMW.</p>
+          <p class="card-contain"><b>Price </b>: 2,00,00,000 /-</p>
+          
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside()">Side View</button>
+    
+          </div>
+          <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Images/BMW/bmw4gt.jpg" class="card-img-top card-img"id="BMW1" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>BMW 4GT CAR</u></h5>
+          <p class="card-text card-contain">The BMW X2 is a subcompact luxury crossover SUV produced by BMW.</p>
+          <p class="card-contain"><b>Price </b>: 2,00,00,000 /-</p>
+          
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview1()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview1()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside1()">Side View</button>
+    
+          </div>
+          <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Images/BMW/bmw535i.jpg" class="card-img-top card-img"id="BMW2" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>BMW 535i CAR</u></h5>
+          <p class="card-text card-contain">The BMW X2 is a subcompact luxury crossover SUV produced by BMW.</p>
+          <p class="card-contain"><b>Price </b>: 2,00,00,000 /-</p>
+          
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview2()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview2()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside2()">Side View</button>
+    
+          </div>
+          <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4 cards">
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Images/BMW/bmwsedan.jpg" class="card-img-top card-img"id="BMW3" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>BMW SEDAN CAR</u></h5>
+          <p class="card-text card-contain">The BMW X2 is a subcompact luxury crossover SUV produced by BMW.</p>
+          <p class="card-contain"><b>Price </b>: 2,00,00,000 /-</p>
+          
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview3()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview3()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside3()">Side View</button>
+    
+          </div>
+          <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Images/BMW/bmwx5.jpg" class="card-img-top card-img"id="BMW4" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>BMW X5 CAR</u></h5>
+          <p class="card-text card-contain">The BMW X5 is a subcompact luxury crossover SUV produced by BMW.</p>
+          <p class="card-contain"><b>Price </b>: 2,00,00,000 /-</p>
+          
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview4()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview4()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside4()">Side View</button>
+    
+          </div>
+          <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+    <div class="col   ">
+      <div class="card bmwcards">
+        <img src="../Images/BMW/mx5.jpg" class="card-img-top card-img"id="BMW5" alt="Download error">
+        <div class="card-body">
+          <h5 class="card-title card-contain"><u>BMW MX5 CAR</u></h5>
+          <p class="card-text card-contain">The BMW MX5 is a subcompact luxury crossover SUV produced by BMW.</p>
+          <p class="card-contain"><b>Price </b>: 2,00,00,000 /-</p>
+          
+         
+          <div class="All-btns">
+
+            <button type="button" class="btn btn-success view-btn" onclick="Frontview5()">Front View</button>
+            <button type="button" class="btn btn-danger view-btn" onclick="backview5()">Back View</button>
+            <button type="button" class="btn btn-warning view-btn" onclick="inside5()">Side View</button>
+    
+          </div>
+          <div>
+            <button type="button cat-bmw-text" class="btn bmwbutton" ><a href="../payment.html" class="btn-link">Buy Now</a></button>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  <script>
+    function backview()
+    {
+      const backview = document.getElementById('BMW');
+      backview.src="../Images/BMW/backx2.jpg ";
+    }
+
+    function Frontview()
+    {
+      const Frontview = document.getElementById('BMW');
+      Frontview.src="../Images/BMW/bmwx2.jpg";
+    }
+
+    function inside()
+    {
+      const inside = document.getElementById('BMW');
+      inside.src="../Images/BMW/x2 side.jpg";
+    }
+
+    function backview1()
+    {
+      const backview = document.getElementById('BMW1');
+      backview.src="../Images/BMW/back4gt.jpg ";
+    }
+
+    function Frontview1()
+    {
+      const Frontview = document.getElementById('BMW1');
+      Frontview.src="../Images/BMW/bmw4gt.jpg";
+    }
+
+    function inside1()
+    {
+      const inside = document.getElementById('BMW1');
+      inside.src="../Images/BMW/side4gt.jpg";
+    }
+
+    function backview2()
+    {
+      const backview = document.getElementById('BMW2');
+      backview.src="../Images/BMW/back535i.jpg ";
+    }
+
+    function Frontview2()
+    {
+      const Frontview = document.getElementById('BMW2');
+      Frontview.src="../Images/BMW/bmw535i.jpg";
+    }
+
+    function inside2()
+    {
+      const inside = document.getElementById('BMW2');
+      inside.src="../Images/BMW/side535i.jpg";
+    }
+
+
+    function backview3()
+    {
+      const backview = document.getElementById('BMW3');
+      backview.src="../Images/BMW/backsedan.jpg ";
+    }
+
+    function Frontview3()
+    {
+      const Frontview = document.getElementById('BMW3');
+      Frontview.src="../Images/BMW/bmwsedan.jpg";
+    }
+
+    function inside3()
+    {
+      const inside = document.getElementById('BMW3');
+      inside.src="../Images/BMW/sidesedan.jpg";
+    }
+
+    function backview4()
+    {
+      const backview = document.getElementById('BMW4');
+      backview.src="../Images/BMW/backx5.jpg ";
+    }
+
+    function Frontview4()
+    {
+      const Frontview = document.getElementById('BMW4');
+      Frontview.src="../Images/BMW/bmwx5.jpg";
+    }
+
+    function inside4()
+    {
+      const inside = document.getElementById('BMW4');
+      inside.src="../Images/BMW/sidex5.jpg";
+    }
+
+
+    function backview5()
+    {
+      const backview = document.getElementById('BMW5');
+      backview.src="../Images/BMW/backmx5.jpg ";
+    }
+
+    function Frontview5()
+    {
+      const Frontview = document.getElementById('BMW5');
+      Frontview.src="../Images/BMW/mx5.jpg";
+    }
+
+    function inside5()
+    {
+      const inside = document.getElementById('BMW5');
+      inside.src="../Images/BMW/sidemx5.jpg";
+    }
+
+
+
+
+    function increaseValue() {
+      var value = parseInt(document.getElementById('number').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value++;
+      document.getElementById('number').value = value;
+
+    }
+
+function decreaseValue() {
+      var value = parseInt(document.getElementById('number').value, 10);
+      value = isNaN(value) ? 0 : value;
+      value < 1 ? value = 1 : '';
+      value--;
+      document.getElementById('number').value = value;
+     }
+ function ammount(){
+  var Quantity=document.getElementById('number').value = value;
+  var value=2*20000000;
+  document.getElementById('total').value = value;
+}
+
+  </script>
+      <button type="button" class="btn btn-dark home-btn"><a href="../index.html"class=" home-btn1"> Back To Home</a></button>
+
+</body>
+</html>

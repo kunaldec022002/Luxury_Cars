@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./payment.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Payment</title>
+    <!-- <script>
+
+        function click(){
+           alert("Your payment Is Successfull ");
+           Document.alert("Your payment Is Successfull ");
+        }
+
+   </script> -->
+<style>
+    .home-btn
+  {
+   
+    display: flex;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+   
+  }
+  .home-btn1
+  {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 2px;
+  }
+</style>
+</head>
+
+<body background="./Images/BMW/wallpaper.webp">
+    <div class="container">
+        <form action="action">
+            <h1>...Payment Form...</h1>
+            <label for="name"><span style="font-size: 18px;">Payer Name:<span></label> <br>
+            <input class="box1" type="text" name="name" id="name" placeholder="Enter Name" required><br>
+            <label for="pemail"><span style="font-size: 18px;">Email:</span></label> <br>
+            <input class="box1" type="email" name="email" id="email" placeholder="Email Address" required><br>
+            <label for="card-num"><span style="font-size: 18px;">Card Number:</span></label> <br>
+            <input class="box1" type="number" name="number" id="number" placeholder="Card Number 1111 2222 3333 4444" required><br><br>
+            <div class="card-container">
+                <div class="div1">
+                    <label for="card-ex"><span style="font-size: 18px;">Card expiry month</span></label> <br>
+                    <input class="box2" type="month" name="month" id="month" placeholder="MM" required><br>
+                </div>
+                <div class="div1">
+                    <label for="card-yr"><span style="font-size: 18px;">Card expiry year</span></label> <br>
+                    <input class="box2" type="year" name="year" id="year" placeholder="YYYY" required><br>
+                </div>
+                <div class="div1">
+                    <label for="card-cvc"><span style="font-size: 18px;">Card CVC</span></label> <br>
+                    <input class="box2" type="cvc" name="cvc" id="cvc" placeholder="CVC" required><br>
+                </div>
+            </div>
+            <button  class="btn1" onclick="click()">PAY NOW</button>
+            <!-- <button  class="btn1" onclick="alert(' Congratulations, Your payment Is Successfull. you are now join Nritya academy.')">PAY NOW</button> -->
+
+        </form>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+        <script src="./pay.js">
+        function click(){
+           alert("Your payment Is Successfull ");
+           Document.alert("Your payment Is Successfull ");
+        }
+
+
+        </script>  
+        <button type="button" class="btn btn-dark home-btn"><a href="./index.html"class=" home-btn1"> Back To Home</a></button>  
+</body>
+
+</html>
