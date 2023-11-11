@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CATEGORIES</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  
 </head>
 <style>
   body
@@ -84,6 +87,40 @@
 
 </style>
 <body background="./Images/BMW/wallpaper.webp">
+
+  <section id="nav-bar">
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./Image/icons/menu.png" class="menu-img"/>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <span style="color: white; font-size: 25px;font-family:sans-serif;">Car Collection</span>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./categories.html">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+</section>
   
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
         
@@ -168,45 +205,62 @@
             </div>
           </div>
           </div>
-          <!-- <section id="footer">
 
-            <div class="container">
-  
-              <div class="row">
-  
-                <div class="col-md-4 footer-box">
-                  <img src="./Image/sedan.png">
-                  <P>Subscribe Easy Tutorials Youtube Channel to watch
-                    more videos on website development, Digital Marketing,
-                    WordPress and Gragphic Designing. 
-                    press the bell icon to get notification.
-                </P>
-                </div>
-  
-                <div class="col-md-4 footer-box">
-                  <p><b>CONTACT US</b></p>
-                  <p>
-                    <img src="./Image/icons/google-maps.png" class="direction"/>
-                     Trade Centre,Banglore</p>
-                  <p>
-                    <img src="./Image/icons/telephone-call.png"  class="direction"/>
-                     +9110020210210</p>
-                  <p>
-                    <img src="./Image/icons/gmail (1).png"  class="direction"/> Car_Collection500@gmail.com</p>
-                </div>
-  
-                <div class="col-md-4 footer-box">
-  
-                  <p><b>FAQs</b></p>
-                  <input type="email" class="form-control" placeholder="Any question" id="input"/>
-                  <button type="button" class="btn btn-primary" onclick=" click()">Submit</button>
-                </div>
+
+         <!---footer section-->
+
+         <section id="footer">
+
+          <div class="container">
+
+            <div class="row">
+
+              <div class="col-md-4 footer-box">
+                <p><b>Quick Links</b></p>
+                <P>
+                  <a href="./index.html" class="footer-quick-link">Home</a>
+              </P>
+             
+              <P>
+                <a href="./categories.html"  class="footer-quick-link">Brands</a>
+              </P>
+
+              <P>
+                <a href="./contact.html"  class="footer-quick-link">Contact</a>
+              </P>
+
+              <P>
+                <a href="./service.html"  class="footer-quick-link">Services</a>
+              </P>
+
+              
               </div>
-              <hr>
-              <p class="copyright">@2023Website Crafted By Car_Collection Team</p>
+
+              <div class="col-md-4 footer-box">
+                <p><b>CONTACT US</b></p>
+                <p>
+                  <img src="./Image/icons/google-maps.png" class="direction"/>
+                   Trade Centre,Banglore</p>
+                <p>
+                  <img src="./Image/icons/telephone-call.png"  class="direction"/>
+                   +9110020210210</p>
+                <p>
+                  <img src="./Image/icons/gmail (1).png"  class="direction"/> Car_Collection500@gmail.com</p>
+              </div>
+
+              <div class="col-md-4 footer-box">
+
+                <p><b>FAQs</b></p>
+                <input type="email" class="form-control" placeholder="Any question"  />
+                <button type="button" class="btn btn-primary" onclick="submit()">Submit</button>
+              </div>
             </div>
-           </section> -->
-           <button type="button" class="btn btn-dark home-btn"><a href="./index.html"class=" home-btn1"> Back To Home</a></button>
+            <hr>
+            <p class="copyright">@2023Website Crafted By Car_Collection Team</p>
+          </div>
+         </section>
+
+
         
 
 </body>
