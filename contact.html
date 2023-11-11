@@ -51,10 +51,176 @@
     display: flex;
     margin: auto;
   }
+
+  #home-nav
+{
+   
+    top: 0px;
+
+}
+
+
+
+.nav-img
+{
+    margin-left: 30px;
+    margin-right: 840px;
+    height: 100px;
+    width: 150px;
+}
+
+#home-name
+{
+    color:white;
+}
+
+#home-name:hover
+{
+    color: black;
+}
+.nav-item a 
+{
+    margin:0px;
+    color: white;
+}
+
+
+.container-fluid
+{
+    background-color:#74018e;
+    margin: -8px;
+    padding: 20px;
+}
+#collection-img
+{
+    box-shadow: 2px 2px 5px 3px #333333;
+    border-radius: 15px;
+}
+
+
+
+.menu-img
+{
+  height: 10px;
+}
+
+.home-name:hover
+{
+    color: white;
+    text-decoration: underline;
+    background-color: blueviolet;
+}
+/*footer*/
+
+#footer
+{
+    background:#7b3290;
+    color: #fff;
+}
+
+.footer-box
+{
+    padding: 20px;
+}
+.footer-box img
+{
+    width: 60px;
+    margin-top: 10px;
+}
+
+ .footer-box .direction
+{
+ margin-right: 8px;
+ font-size: 25px;
+ height: 30px;
+ width:30px;
+ text-align: center;
+ }
+
+ .form-control
+ {
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0px;
+    margin-top: 25px;
+    max-width: 250px;
+ }
+
+ .footer-box .btn-primary
+ {
+    box-shadow: none !important;
+    border: none;
+    border-radius: 7px;
+    margin-top: 30px;
+    background-color:#7b1798;
+ }
+
+ hr
+ {
+    background-color: #fff;
+    height: 5px;
+ }
+
+.copyright
+{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer-quick-link
+{
+    color:black;
+    text-decoration: none;
+}
+.footer-quick-link:hover
+{
+    
+    color: #fff;
+}
+.banner-content
+{
+    font-size: 20px;
+    text-align: center;
+}
      </style>
 
 </head>
 <body background="./Images/BMW/wallpaper.webp">
+
+    <section id="nav-bar">
+
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid">
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./Image/icons/menu.png" class="menu-img"/>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <span style="color: white; font-size: 25px;font-family:sans-serif;">Car Collection</span>
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./categories.html">Categories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./service.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+    </section>
   
     <div class="container ">
         <div class="row">
@@ -126,12 +292,67 @@
           </div>
         </div>
     </div>
+    <br/>
 
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
-    <button type="button" class="btn btn-dark home-btn"><a href="./index.html"class=" home-btn1"> Back To Home</a></button>
+   
+
+     <!---footer section-->
+
+     <section id="footer">
+
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-md-4 footer-box">
+              <p><b>Quick Links</b></p>
+              <P>
+                <a href="./index.html" class="footer-quick-link">Home</a>
+            </P>
+           
+            <P>
+              <a href="./categories.html"  class="footer-quick-link">Brands</a>
+            </P>
+
+            <P>
+              <a href="./contact.html"  class="footer-quick-link">Contact</a>
+            </P>
+
+            <P>
+              <a href="./service.html"  class="footer-quick-link">Services</a>
+            </P>
+
+            
+            </div>
+
+            <div class="col-md-4 footer-box">
+              <p><b>CONTACT US</b></p>
+              <p>
+                <img src="./Image/icons/google-maps.png" class="direction"/>
+                 Trade Centre,Banglore</p>
+              <p>
+                <img src="./Image/icons/telephone-call.png"  class="direction"/>
+                 +9110020210210</p>
+              <p>
+                <img src="./Image/icons/gmail (1).png"  class="direction"/> Car_Collection500@gmail.com</p>
+            </div>
+
+            <div class="col-md-4 footer-box">
+
+              <p><b>FAQs</b></p>
+              <input type="email" class="form-control" placeholder="Any question"  />
+              <button type="button" class="btn btn-primary" onclick="submit()">Submit</button>
+            </div>
+          </div>
+          <hr>
+          <p class="copyright">@2023Website Crafted By Car_Collection Team</p>
+        </div>
+       </section>
+
 
 </body>
 </html>
