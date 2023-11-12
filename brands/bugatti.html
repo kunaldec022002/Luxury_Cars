@@ -135,6 +135,78 @@
 {
   height: 10px;
 }
+
+#footer
+{
+    background:#7b3290;
+    color: #fff;
+}
+
+.footer-box
+{
+    padding: 20px;
+}
+.footer-box img
+{
+    width: 60px;
+    margin-top: 10px;
+}
+
+ .footer-box .direction
+{
+ margin-right: 8px;
+ font-size: 25px;
+ height: 30px;
+ width:30px;
+ text-align: center;
+ }
+
+ .form-control
+ {
+    box-shadow: none !important;
+    border: none;
+    border-radius: 0px;
+    margin-top: 25px;
+    max-width: 250px;
+ }
+
+ .footer-box .btn-primary
+ {
+    box-shadow: none !important;
+    border: none;
+    border-radius: 7px;
+    margin-top: 30px;
+    background-color:#7b1798;
+ }
+
+ hr
+ {
+    background-color: #fff;
+    height: 5px;
+ }
+
+.copyright
+{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.footer-quick-link
+{
+    color:black;
+    text-decoration: none;
+}
+.footer-quick-link:hover
+{
+    
+    color: #fff;
+}
+.banner-content
+{
+    font-size: 20px;
+    text-align: center;
+}
 </style>
 <body background="../Images/BMW/wallpaper.webp">
 
@@ -477,7 +549,53 @@ function decreaseValue() {
 }
 
   </script>
-  <button type="button" class="btn btn-dark home-btn"><a href="../index.html"class=" home-btn1"> Back To Home</a></button>
+ 
+
+ <section id="footer">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-md-4 footer-box">
+        <p><b>Quick Links</b></p>
+        <P>
+          <a href="./index.html" class="footer-quick-link">Home</a>
+      </P>
+     
+      <P>
+        <a href="./categories.html"  class="footer-quick-link">Brands</a>
+      </P>
+
+      <P>
+        <a href="./contact.html"  class="footer-quick-link">Contact</a>
+      </P>
+
+      <P>
+        <a href="./service.html"  class="footer-quick-link">Services</a>
+      </P>
+
+      
+      </div>
+
+      <div class="col-md-4 footer-box">
+        <p><b>CONTACT US</b></p>
+        <p>
+          <img src="../Image/icons/google-maps.png" class="direction"/>
+           Trade Centre,Banglore</p>
+        <p>
+          <img src="../Image/icons/telephone-call.png"  class="direction"/>
+           +9110020210210</p>
+        <p>
+          <img src="../Image/icons/gmail (1).png"  class="direction"/> Car_Collection500@gmail.com</p>
+      </div>
+
+      <div class="col-md-4 footer-box">
+
+        <p><b>FAQs</b></p>
+        <input type="email" class="form-control" placeholder="Any question"  />
+        <button type="button" class="btn btn-primary" onclick="submit()">Submit</button>
+ </section>
 
 </body>
 </html>
