@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Bugati PAGE</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <style>
    body
@@ -96,12 +96,106 @@
     font-size: 20px;
     padding: 2px;
   }
+  .height
+  {
+    height: 600px;
+  }
+
+  .nav-img
+{
+    margin-left: 30px;
+    margin-right: 840px;
+    height: 100px;
+    width: 150px;
+}
+
+#home-name
+{
+    color:white;
+}
+
+#home-name:hover
+{
+    color: black;
+}
+.nav-item a 
+{
+    margin:0px;
+    color: white;
+}
+
+
+.container-fluid
+{
+    background-color:#74018e;
+    margin: -8px;
+    padding: 20px;
+}
+.menu-img
+{
+  height: 10px;
+}
 </style>
 <body background="../Images/BMW/wallpaper.webp">
+
+  <section id="nav-bar">
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./Image/icons/menu.png" class="menu-img"/>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <span style="color: white; font-size: 25px;font-family:sans-serif;">Car Collection</span>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./categories.html">Categories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+</section>
+             
+
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../Image/BUGATI/1099233-15361.jpg" class="d-block w-100 height" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../Image/BUGATI/bugati-full.jpg" class="d-block w-100 height" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="../Image/BUGATI/2023-Bugatti-Mistral-11.jpg" class="d-block w-100 height" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
  
-  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"> 
-        <marquee class="nav-content"> WEL - COME TO THE BUGATTI CAR COLLECTION  !!!!</marquee>
-   </nav>
+ 
    <div class="row row-cols-1 row-cols-md-3 g-4 cards">
     <div class="col   ">
       <div class="card bmwcards">
