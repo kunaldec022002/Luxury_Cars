@@ -51,6 +51,14 @@
   transition: 0.5s;
 }
 
+/* slide image*/
+
+.height
+{
+  height: 600px;
+}
+
+
 /*btn*/
 
 .tata-buy-now

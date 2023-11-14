@@ -202,3 +202,32 @@
     
     color: #fff;
 }
+
+/* slide image*/
+
+.height
+{
+  height: 600px;
+}
+
+/*btn*/
+
+.tata-buy-now
+{
+    text-decoration: none;
+    display: block;
+    margin: 5px auto;
+    width: 90px;
+    background-color: #000000;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    
+}
+.tata-buy-now:hover
+{
+    background-color: #333333;
+    color: #fff;
+    cursor: pointer;
+}
