@@ -91,12 +91,24 @@
   font-size: 20px;
   
 }
+
+.body-light
+{
+  color: black;
+  background-color: #fff;
+}
+
+.body-dark
+{
+  color: #fff;
+  background-color: black;
+}
        </style>
 
     
 
     </head>
-    <body  class="body-bg-color"background="./Images/BMW/wallpaper.webp">
+    <body class="body-light" id="body">
 
      
       <section id="nav-bar">
@@ -125,6 +137,9 @@
                   <li class="nav-item">
                     <a class="nav-link" href="./contact.html">Contact</a>
                   </li>
+
+                  <button type="button" onclick="toggleLightTheme()" class="screen-mode">Light</button>
+                  <button type="button"  onclick="toggleDarkTheme()" class="screen-mode">dark</button>
                 </ul>
               </div>
             </div>
@@ -170,7 +185,7 @@
 
       
      
-    <body background="./Images/BMW/wallpaper.webp">
+  
  
       <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"> 
             
@@ -406,7 +421,7 @@
 
 
               <a href="#"><img src="./Image/icons/facebook (1).png"></a>
-              <a href="https://github.com/kunaldec022002/Luxury_Cars"><img src="./Image/icons/github-sign.png"></a>
+              <a href="https://github.com/kunaldec022002/Luxury_Cars"><img src="./Image//icons/social (1).png"></a>
               <a href="#"><img src="./Image/icons/instagram (3).png"></a>
 
 
@@ -609,6 +624,24 @@
             
             const result=alert(' Submit Sucessfully!')
           }
+
+          /* light and dark mode*/
+
+          function toggleDarkTheme()
+          {
+            const bodyElement = document.getElementById('body');
+            bodyElement.classList.remove('body-light');
+            bodyElement.classList.add('body-dark');
+          }
+
+          function toggleLightTheme()
+          {
+            const bodyElement = document.getElementById('body');
+            bodyElement.classList.add('body-light');
+            bodyElement.classList.remove('body-dark');
+          }
+
+          
          
         </script>
 
