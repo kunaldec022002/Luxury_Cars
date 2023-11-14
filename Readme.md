@@ -15,7 +15,7 @@ A car collection typically refers to a group of automobiles that have been accum
 # Most Searched Car
 ![searched-car](<search-car.png>)
 # Price Collection
-![Price](price.png)
+
 
 
 ## Summarize
