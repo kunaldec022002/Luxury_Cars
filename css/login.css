@@ -1,0 +1,40 @@
+.container
+{
+    background-color: #fff;
+    width: fit-content;
+    padding: 40px;
+    margin: 0 auto;
+    margin-top: 70px;
+    box-shadow: 2px 3px 5px 3px black;
+    border-radius: 10px 20px 10px 20px ;
+}
+
+.user-info
+{
+    font-size: 30px;
+}
+
+.input-text
+{
+    font-size: 20px;
+    height: 30px;
+}
+
+.sbmit-btn
+{
+    display: block;
+    margin: 5px auto;
+    background: black;
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+    width: 105px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sbmit-btn:hover
+{
+    background-color:#fff;
+    color: black;
+}
