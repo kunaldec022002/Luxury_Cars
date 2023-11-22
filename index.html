@@ -487,17 +487,61 @@
                 </div>
   
                 <div class="col-md-4 footer-box">
-  
-                  <p><b>FAQs</b></p>
-                  <input type="email" class="form-control" placeholder="Any question" id="email" name="email" required  />
-                  <button type="button" class="btn btn-primary" onclick="submit()">Submit</button>
 
+
+                  <h2>Feedback Form</h2>
+        <form id="feedbackForm">
+            <label for="name">Your Name:</label><br/>
+            <input type="text" id="name" class="input-text"  name="name" required><br/>
+
+            <label for="email">Your Email:</label><br/>
+            <input type="email" class="input-text" id="email" name="email" required><br/>
+
+            <label for="message">Your Feedback:</label><br/>
+            <textarea id="message" name="message" class="input-text"  rows="4" required></textarea><br/>
+
+            <button type="button" class="feedback-btn" onclick="submitFeedback()">Submit Feedback</button>
+        </form>
+        <p id="success-message"></p>
+
+        
+
+  
+                
                   
            </section>
 
 
        
         <script>
+
+          /*feedback section*/
+
+          function submitFeedback() {
+    // Get the values from the form
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // You can perform additional validation if needed
+
+    // Save the feedback to localStorage (for educational purposes only)
+    const feedback = {
+        name: name,
+        email: email,
+        message: message
+    };
+
+    // Store the feedback in an array in localStorage
+    let feedbackList = JSON.parse(localStorage.getItem('feedbackList')) || [];
+    feedbackList.push(feedback);
+    localStorage.setItem('feedbackList', JSON.stringify(feedbackList));
+
+    // Display a success message
+    alert("feedback Send Successfully")
+    // Clear the form
+    document.getElementById('feedbackForm').reset();
+}
 
           /* rolls royce */
 
@@ -619,14 +663,7 @@
           BMW_inside.src= "./Image/tata/tata-interior.jpg";
           }
 
-          /*---submit section----*/
-          
-          function submit ()
-          {
-            
-            const result=alert(' Submit Sucessfully!')
-          }
-
+       
           /* light and dark mode*/
 
           function toggleDarkTheme()

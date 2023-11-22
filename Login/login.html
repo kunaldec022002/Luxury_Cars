@@ -18,6 +18,7 @@
             <input type="password" id="password" name="password" required>
 
             <button type="button" onclick="login()">Login</button>
+            
         </form>
         <p id="error-message"></p>
     </div>
@@ -29,12 +30,14 @@
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
-            if (username ==='your_username' && password==='your_password')
+            const storePassword = localStorage.getItem(username);
+
+            if (storePassword && password===storePassword)
             {
                 localStorage.setItem('isLoggedIn', true);
 
                 alert("Login Successful !");
-                window.location.href=''
+                window.location.href="../index.html";
             }
             else
             {

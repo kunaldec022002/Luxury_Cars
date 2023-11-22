@@ -355,4 +355,29 @@ font-size: 20px;
     color: black;
 }
 
+.input-text
+{
+    border-radius: 10px;
+    width: 300px;
+    font-size: 23px;
+}
+
+.feedback-btn
+{
+    display: block;
+    margin-top: 10px;
+    margin-left: 85px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+}
+
+.feedback-btn:hover
+{
+    background-color:#74018e;
+    color: #000000;
+    cursor: pointer;
+}
 
