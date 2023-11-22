@@ -7,26 +7,24 @@ body {
     margin: 0;
 }
 
+.signup-container {
+    width: fit-content;
+    padding: 50px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
 .login-header
 {
     text-align: center;
 }
 
-
-.login-container {
-    width:fit-content;
-    padding: 50px;
-    border-radius: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
 button {
     display: block;
-
-    margin: 10px auto;
     background-color: #4caf50;
-    color: #000000;
+    margin: 10px auto;
+    color:black;
     padding: 10px 15px;
     border: none;
     border-radius: 3px;

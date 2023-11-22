@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signup.css">
+    <title>Signup Page</title>
+</head>
+<body>
+    <div class="signup-container">
+        <h2 class="login-header">Signup</h2>
+        <form id="signupForm">
+            <label for="username">Username:</label><br/>
+            <input type="text" id="username" name="username" required><br/><br/>
+
+            <label for="password">Password:</label><br/>
+            <input type="password" id="password" name="password" required><br/>
+
+            <button type="button" onclick="signup()">Signup</button>
+        
+        </form>
+        <p id="error-message"></p>
+    </div>
+
+    <script>
+
+function signup() {
+    // Get the values from the form
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Check if the username already exists in localStorage
+    if (localStorage.getItem(username)) {
+        document.getElementById('error-message').textContent = 'Username already exists';
+    } else {
+        // Save the username and password to localStorage
+        localStorage.setItem(username, password
+        );
+
+        // Display a success message or redirect to login page
+        alert('Signup successful! You can now login.');
+        window.location.href="../Login/login.html";
+    }
+}
+    </script>
+</body>
+</html>

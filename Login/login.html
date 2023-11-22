@@ -8,20 +8,40 @@
 </head>
 <body>
 
-    <div class="container">
+    <div class="login-container">
+        <h2 class="login-header">Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label><br/>
+            <input type="text" id="username" name="username" required><br/><br/>
 
-        <label class="user-info">Email:-</label>
-        <br/>
-        <input type="email" class="input-text" id="email"  name="email" placeholder="enter gmail" required/>
-        <br/><br/>
+            <label for="password">Password:</label><br/>
+            <input type="password" id="password" name="password" required>
 
-        <label class="user-info"> Password:-</label>
-        <br/>
-        <input type="password" class="input-text" id="password" placeholder="enter password" required/>
-        <br/><br/>
-        
-        <button type="button" class="sbmit-btn">Submit</button>
+            <button type="button" onclick="login()">Login</button>
+        </form>
+        <p id="error-message"></p>
     </div>
+
+    <script>
+
+        function login()
+        {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            if (username ==='your_username' && password==='your_password')
+            {
+                localStorage.setItem('isLoggedIn', true);
+
+                alert("Login Successful !");
+                window.location.href=''
+            }
+            else
+            {
+                document.getElementById('error-message').textContent = 'Invalid username or password';
+            }
+        }
+    </script>
     
 </body>
 </html>
