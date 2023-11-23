@@ -37,7 +37,7 @@ function processPayment() {
     const quantity = document.getElementById('number').value;
 
     // Validate the card details (simplified for example purposes)
-    if (cardNumber.length === 16 && expiryDate.length === 5 && cvv.length === 3) {
+    if (cardNumber.length === 16 && expiryDate.length === 5 && cvv.length === 3 && quantity.length===5) {
         // Save the payment details to localStorage (for educational purposes only)
         const paymentDetails = {
             cardNumber: cardNumber,
